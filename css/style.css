@@ -71,7 +71,7 @@ section {
 
 /* --- HEADER ---*/
 header {
-  background: url("https://i.imgur.com/GACKiIE.jpg") fixed 0/cover no-repeat;
+  background: url("../images/hero.jpg") fixed 0/cover no-repeat;
   background-position: center;
   height: 100vh;
   min-height: 600px;
@@ -144,7 +144,7 @@ header {
 
 /* --- SERVICES ---*/
 .services {
-  background: url("https://i.imgur.com/cd6LPVU.jpg") fixed 0/cover no-repeat;
+  background: url("../images/background.jpg") fixed 0/cover no-repeat;
   background-position: center;
   height: 490px;
   width: auto; }
@@ -329,7 +329,7 @@ footer {
 
 .backToTop {
   position: fixed;
-  background: url("https://i.imgur.com/dRot1yI.png") center 0/cover no-repeat;
+  background: url("../images/scrollupnew.png") center 0/cover no-repeat;
   bottom: 30px;
   right: 30px;
   height: 50px;

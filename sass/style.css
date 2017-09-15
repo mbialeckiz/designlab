@@ -296,7 +296,7 @@ header {
       .works .photo::after {
         display: block;
         bottom: 20px; } }
-  /* line 346, /Users/dianaimarcin/Desktop/project4/sass/style.scss */
+  /* line 345, /Users/dianaimarcin/Desktop/project4/sass/style.scss */
   .works .photo img {
     height: 300px;
     width: 100%;
@@ -305,20 +305,20 @@ header {
 
 /* --- MEDIA QUERIES FOR WORKS --- */
 @media (max-width: 991px) {
-  /* line 359, /Users/dianaimarcin/Desktop/project4/sass/style.scss */
+  /* line 358, /Users/dianaimarcin/Desktop/project4/sass/style.scss */
   .works .gal {
     width: calc(50% - 5px) !important; }
-    /* line 361, /Users/dianaimarcin/Desktop/project4/sass/style.scss */
+    /* line 360, /Users/dianaimarcin/Desktop/project4/sass/style.scss */
     .works .gal:nth-of-type(1n+0) {
       margin-left: 0;
       margin-right: 5px; }
-    /* line 365, /Users/dianaimarcin/Desktop/project4/sass/style.scss */
+    /* line 364, /Users/dianaimarcin/Desktop/project4/sass/style.scss */
     .works .gal:nth-of-type(2n+0) {
       margin-left: 5px;
       margin-right: 0; } }
 
 @media (max-width: 767px) {
-  /* line 375, /Users/dianaimarcin/Desktop/project4/sass/style.scss */
+  /* line 374, /Users/dianaimarcin/Desktop/project4/sass/style.scss */
   .works .gal {
     width: 100% !important;
     margin-left: 0 !important;
@@ -326,16 +326,16 @@ header {
 
 /* --- CONTACT --- */
 @media screen and (max-width: 767px) {
-  /* line 385, /Users/dianaimarcin/Desktop/project4/sass/style.scss */
+  /* line 384, /Users/dianaimarcin/Desktop/project4/sass/style.scss */
   .contact {
     margin-bottom: 0; } }
 
 @media screen and (max-width: 767px) {
-  /* line 389, /Users/dianaimarcin/Desktop/project4/sass/style.scss */
+  /* line 388, /Users/dianaimarcin/Desktop/project4/sass/style.scss */
   .contact p {
     padding-top: 50px; } }
 
-/* line 394, /Users/dianaimarcin/Desktop/project4/sass/style.scss */
+/* line 393, /Users/dianaimarcin/Desktop/project4/sass/style.scss */
 .contact a {
   margin-top: 60px;
   display: inline-block;
@@ -343,10 +343,10 @@ header {
   text-decoration: none;
   transition: all 0.3s ease;
   transform-style: preserve-3d; }
-  /* line 401, /Users/dianaimarcin/Desktop/project4/sass/style.scss */
+  /* line 400, /Users/dianaimarcin/Desktop/project4/sass/style.scss */
   .contact a:hover {
     transform: rotateX(90deg); }
-  /* line 404, /Users/dianaimarcin/Desktop/project4/sass/style.scss */
+  /* line 403, /Users/dianaimarcin/Desktop/project4/sass/style.scss */
   .contact a .btn {
     display: block;
     height: 60px;
@@ -358,43 +358,43 @@ header {
     color: #fff;
     text-transform: uppercase;
     letter-spacing: 2px; }
-    /* line 416, /Users/dianaimarcin/Desktop/project4/sass/style.scss */
+    /* line 415, /Users/dianaimarcin/Desktop/project4/sass/style.scss */
     .contact a .btn.hover {
       color: #3c3c3c;
       border: 2px solid #3c3c3c;
       background-color: #fff;
       font-weight: 700;
       transform: rotateX(-90deg) translateZ(-21px); }
-    /* line 424, /Users/dianaimarcin/Desktop/project4/sass/style.scss */
+    /* line 423, /Users/dianaimarcin/Desktop/project4/sass/style.scss */
     .contact a .btn.default {
       transform: translateZ(21px); }
 
 /* --- FOOTER --- */
-/* line 432, /Users/dianaimarcin/Desktop/project4/sass/style.scss */
+/* line 431, /Users/dianaimarcin/Desktop/project4/sass/style.scss */
 footer {
   padding-bottom: 10px; }
   @media screen and (max-width: 767px) {
-    /* line 432, /Users/dianaimarcin/Desktop/project4/sass/style.scss */
+    /* line 431, /Users/dianaimarcin/Desktop/project4/sass/style.scss */
     footer {
       padding-bottom: 20px; } }
-  /* line 437, /Users/dianaimarcin/Desktop/project4/sass/style.scss */
+  /* line 436, /Users/dianaimarcin/Desktop/project4/sass/style.scss */
   footer .logo-ftr {
     display: inline-block;
     padding: 20px; }
     @media screen and (max-width: 767px) {
-      /* line 437, /Users/dianaimarcin/Desktop/project4/sass/style.scss */
+      /* line 436, /Users/dianaimarcin/Desktop/project4/sass/style.scss */
       footer .logo-ftr {
         display: block;
         padding-top: 0; } }
-  /* line 446, /Users/dianaimarcin/Desktop/project4/sass/style.scss */
+  /* line 445, /Users/dianaimarcin/Desktop/project4/sass/style.scss */
   footer p {
     display: inline-block; }
     @media screen and (max-width: 767px) {
-      /* line 446, /Users/dianaimarcin/Desktop/project4/sass/style.scss */
+      /* line 445, /Users/dianaimarcin/Desktop/project4/sass/style.scss */
       footer p {
         display: block; } }
 
-/* line 454, /Users/dianaimarcin/Desktop/project4/sass/style.scss */
+/* line 453, /Users/dianaimarcin/Desktop/project4/sass/style.scss */
 .backToTop {
   position: fixed;
   background: url("../images/scrollupnew.png") center 0/cover no-repeat;
@@ -411,15 +411,15 @@ footer {
   -moz-transition: visibility 0.2s, opacity 0.2s;
   transition: visibility 0.2s, opacity 0.2s; }
   @media screen and (max-width: 767px) {
-    /* line 454, /Users/dianaimarcin/Desktop/project4/sass/style.scss */
+    /* line 453, /Users/dianaimarcin/Desktop/project4/sass/style.scss */
     .backToTop {
       bottom: 20px;
       right: 20px; } }
-  /* line 473, /Users/dianaimarcin/Desktop/project4/sass/style.scss */
+  /* line 472, /Users/dianaimarcin/Desktop/project4/sass/style.scss */
   .backToTop:hover {
     background-color: #4c5c79;
     opacity: 0.85; }
-  /* line 477, /Users/dianaimarcin/Desktop/project4/sass/style.scss */
+  /* line 476, /Users/dianaimarcin/Desktop/project4/sass/style.scss */
   .backToTop.hidden {
     opacity: 0;
     visibility: hidden; }
