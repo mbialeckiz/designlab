@@ -370,31 +370,31 @@ header {
       transform: translateZ(21px); }
 
 /* --- FOOTER --- */
-/* line 433, /Users/dianaimarcin/Desktop/project4/sass/style.scss */
+/* line 432, /Users/dianaimarcin/Desktop/project4/sass/style.scss */
 footer {
   padding-bottom: 10px; }
   @media screen and (max-width: 767px) {
-    /* line 433, /Users/dianaimarcin/Desktop/project4/sass/style.scss */
+    /* line 432, /Users/dianaimarcin/Desktop/project4/sass/style.scss */
     footer {
       padding-bottom: 20px; } }
-  /* line 438, /Users/dianaimarcin/Desktop/project4/sass/style.scss */
+  /* line 437, /Users/dianaimarcin/Desktop/project4/sass/style.scss */
   footer .logo-ftr {
     display: inline-block;
     padding: 20px; }
     @media screen and (max-width: 767px) {
-      /* line 438, /Users/dianaimarcin/Desktop/project4/sass/style.scss */
+      /* line 437, /Users/dianaimarcin/Desktop/project4/sass/style.scss */
       footer .logo-ftr {
         display: block;
         padding-top: 0; } }
-  /* line 447, /Users/dianaimarcin/Desktop/project4/sass/style.scss */
+  /* line 446, /Users/dianaimarcin/Desktop/project4/sass/style.scss */
   footer p {
     display: inline-block; }
     @media screen and (max-width: 767px) {
-      /* line 447, /Users/dianaimarcin/Desktop/project4/sass/style.scss */
+      /* line 446, /Users/dianaimarcin/Desktop/project4/sass/style.scss */
       footer p {
         display: block; } }
 
-/* line 455, /Users/dianaimarcin/Desktop/project4/sass/style.scss */
+/* line 454, /Users/dianaimarcin/Desktop/project4/sass/style.scss */
 .backToTop {
   position: fixed;
   background: url("../images/scrollupnew.png") center 0/cover no-repeat;
@@ -411,15 +411,15 @@ footer {
   -moz-transition: visibility 0.2s, opacity 0.2s;
   transition: visibility 0.2s, opacity 0.2s; }
   @media screen and (max-width: 767px) {
-    /* line 455, /Users/dianaimarcin/Desktop/project4/sass/style.scss */
+    /* line 454, /Users/dianaimarcin/Desktop/project4/sass/style.scss */
     .backToTop {
       bottom: 20px;
       right: 20px; } }
-  /* line 474, /Users/dianaimarcin/Desktop/project4/sass/style.scss */
+  /* line 473, /Users/dianaimarcin/Desktop/project4/sass/style.scss */
   .backToTop:hover {
     background-color: #4c5c79;
     opacity: 0.85; }
-  /* line 478, /Users/dianaimarcin/Desktop/project4/sass/style.scss */
+  /* line 477, /Users/dianaimarcin/Desktop/project4/sass/style.scss */
   .backToTop.hidden {
     opacity: 0;
     visibility: hidden; }
