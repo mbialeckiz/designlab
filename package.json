@@ -1,0 +1,30 @@
+{
+  "name": "mbialeckiz-design-lab",
+  "version": "1.0.0",
+  "description": "4th ambitious project from bootcamp",
+  "main": "gruntfile.js",
+  "scripts": {
+    "test": "text-command"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mbialeckiz/design-lab.git"
+  },
+  "keywords": [
+    "design",
+    "lab"
+  ],
+  "author": "Marcin Bialecki",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mbialeckiz/design-lab/issues"
+  },
+  "homepage": "https://github.com/mbialeckiz/design-lab#readme",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-browser-sync": "^2.2.0",
+    "grunt-contrib-imagemin": "^2.0.1",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-sass": "^2.0.0"
+  }
+}

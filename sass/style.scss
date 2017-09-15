@@ -1,0 +1,482 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:100,400,700');
+
+/* --- VARIABLES ---*/
+
+$black: #3c3c3c;
+$light-blue: #8f9aaa;
+$font-lato: 'Lato', sans-serif;
+
+
+/* MEDIA QUERIES MIXINS */
+@mixin media-xs-screen {  
+    @media screen and (max-width: 767px) {
+        @content;
+    }
+}
+
+@mixin media-sm-screen {  
+    @media screen and (min-width: 768px) and (max-width:991px) {
+        @content;
+    }
+}
+
+@mixin media-md-screen { 
+    @media screen and (min-width: 992px) and (max-width: 1199px) {
+        @content;
+    }
+}
+
+@mixin media-xs-sm-screen {
+    @media screen and (max-width: 991px) {
+        @content;
+    }
+}
+
+@mixin media-sm-md-screen { 
+    @media screen and (min-width: 798px) and (max-width: 1199px) {
+        @content;
+    }
+}
+
+/* --- GENERAL ---*/
+
+body {
+    font-family: $font-lato;
+}
+
+p {
+    font-size: 16px;
+    line-height: 30px;
+    color: $black;
+    font-weight: 400;
+    max-width: 600px;
+    margin: 0 auto;
+}
+    
+h1 {
+    font-size: 54px;
+    font-weight: 100;
+    line-height: normal;
+    color: #fff;
+    letter-spacing: 2px;
+}
+
+h2 {
+    font-weight: 400;
+    line-height: normal;
+    color: $black;    
+    font-size: 34px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+h3 {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 40px;
+    color: $black;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+section {
+    margin: 50px auto;
+}
+
+.border {
+    position: relative; 
+    border-left: 2px solid $black;
+    border-right: 2px solid $black;
+    border-bottom: 2px solid $black;
+    padding: 60px 20px;
+    margin: 120px 0;
+    @include media-xs-screen {
+        margin: 50px 20px;
+    }
+    &::before {
+        content: " ";
+        border-top: 2px solid $black;
+        width: 25%;   
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    
+    &::after {
+        content: " ";
+        border-top: 2px solid $black;
+        width: 25%;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    
+    h2 {
+        position: absolute;
+        width: 50%;
+        left: 25%;
+        top: -40px;
+    }
+}
+
+/* --- HEADER ---*/
+
+header {
+    background: url('https://i.imgur.com/GACKiIE.jpg') fixed 0/cover no-repeat;
+    background-position: center;
+    height: 100vh;
+    min-height: 600px;
+    width: 100%;
+    position: relative;
+    @include media-xs-screen {
+        padding: 0 20px;
+        min-height: none;
+    }
+    .logo {
+        height: 80px;
+        width: 80px;
+        margin: 100px auto;
+        padding-top: 150px;
+        @include media-xs-screen {
+            padding-top: 50px;
+            margin: 50px auto;
+        }
+    }
+    h1 {
+        padding: 50px 0;
+        text-transform: uppercase;
+        @include media-xs-screen {
+            font-size: 46px;
+            padding: 20px 0;
+        }
+    }
+    p {
+        color: #fff;
+        font-size: 18px;
+        font-weight: 100;
+        text-transform: uppercase;
+        max-width: 600px;
+        @include media-xs-screen {
+            font-size: 16px;
+        }
+    }
+    .scroller {
+        position: absolute;
+        bottom: 50px;
+        left: 50%;
+        -ms-transform: translate(-50%, 0);
+        -webkit-transform: translate(-50%, 0);
+        transform: translate(-50%, 0);
+        @include media-xs-screen {
+            bottom: 20px;
+        }
+        .scroll {
+            display: block;
+            height: 40px;
+            width: 26px;
+            border-radius: 13px;
+            border: 2px solid #fff;
+            position: relative;
+            &:hover {
+                &:after{
+                    top: 25px;
+                }
+            }
+            &:after {
+                content: "";
+                position: absolute;
+                height: 6px;
+                width: 6px;
+                top: 6px;
+                left: calc(50% - 3px);
+                background: #fff;
+                border-radius: 50%;
+                -webkit-transition: 0.4s;
+                -moz-transition: 0.4s;
+                transition: 0.4s;
+                
+            }
+            
+        }
+    }
+}
+
+/* --- ABOUT ---*/
+.about {
+    p {
+        padding-top: 20px;
+    }
+}
+
+/* --- SERVICES ---*/
+
+.services {
+    background: url('https://i.imgur.com/cd6LPVU.jpg') fixed 0/cover no-repeat;
+    background-position: center;
+    height: 490px;
+    width: auto;
+    @include media-xs-screen {
+        padding: 50px 0;
+        margin-bottom: 30px;
+        height: auto;
+    }
+    .border {
+        border-left: 2px solid #fff;
+        border-right: 2px solid #fff;
+        border-bottom: 2px solid #fff;
+        &::before {
+        border-top: 2px solid #fff;
+        }
+        &::after {
+        border-top: 2px solid #fff;
+        }
+    }
+    h2 {
+        color: #fff;
+    }
+    p {
+        color: #fff;
+    }
+}
+
+/* --- OFFER --- */
+
+.offer {
+    .pic {
+        padding: 70px 20px 0;
+        transition-duration: 2s;
+        @include media-xs-screen {
+            padding: 40px 20px 0;
+        }
+        &:hover {
+            transform: rotate3d(0,20,0,360deg);
+        }
+    }
+}
+
+/* --- WORKS --- */
+
+.works {
+    .container-fluid {
+        padding-right: 0;
+        padding-left: 0;
+    }
+    .row {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    
+    [class*="col-"] {
+        padding: 0;
+        margin-bottom: 10px;
+    }
+    
+    .gal {
+        padding: 0;
+        width: calc(33.33% - 10px);
+        margin-left: 5px;
+        margin-right: 5px;
+        &:first-of-type {
+            margin-left: 0;
+            width: calc(33.33% - 5px); 
+        }
+        &:nth-of-type(4n+0) {
+            margin-left: 0;
+            width: calc(33.33% - 5px);
+        }
+        &:nth-of-type(3n+0) {
+            margin-right: 0;
+            width: calc(33.33% - 5px); 
+        }
+        &:last-of-type {
+            margin-right: 0;
+            width: calc(33.33% - 5px);
+        }
+    }
+    
+    .photo {
+        position: relative;
+        display: block;
+        &::before {
+            content: "";
+            position: absolute;
+            z-index: 99;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.3);
+            transition: background-color 0.3s ease-out;
+        }
+        &:hover {
+            &::before {
+                background-color: rgba(0,0,0,0.5);
+            }
+            &::after {
+                display: block;
+                bottom: 120px;
+            }
+        }
+        
+        &::after {
+            content: "See More";
+            position: absolute;
+            display: none;
+            height: 60px;
+            width: 200px;
+            left: calc(50% - 105px;);
+            z-index: 99;
+            margin: 0 auto;
+            line-height: 60px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #fff;
+            text-align: center;
+            font-weight: 700;
+            border: 2px solid #fff;
+            transition: bottom 0.3s ease-out;
+            cursor: pointer;
+            @include media-xs-screen {
+                display: block;
+                bottom: 20px;
+            }
+            
+        }
+        
+        img {
+            height: 300px;
+            width: 100%;
+            object-fit: cover;
+            background-position: center;
+        }
+    }
+}
+
+/* --- MEDIA QUERIES FOR WORKS --- */
+
+@media (max-width: 991px) {
+    .works {
+        .gal {
+            width: calc(50% - 5px) !important; 
+            &:nth-of-type(1n+0) {
+              margin-left: 0;
+              margin-right: 5px; 
+            }
+            &:nth-of-type(2n+0) {
+                margin-left: 5px;
+                margin-right: 0;
+            } 
+        }  
+    }
+}
+    
+@media (max-width: 767px) {
+    .works {
+        .gal {
+            width: 100% !important;
+            margin-left: 0 !important;
+            margin-right: 0 !important;
+        }  
+    }
+}
+
+/* --- CONTACT --- */
+
+.contact {
+    @include media-xs-screen {
+        margin-bottom: 0;
+    }
+    p {
+        @include media-xs-screen {
+            padding-top: 50px;
+        }
+    }
+    a {
+        margin-top: 60px;
+        display: inline-block;
+        height: 60px;
+        text-decoration: none;
+        transition: all 0.3s ease;
+        transform-style: preserve-3d;
+        &:hover {
+            transform: rotateX(90deg);
+        }
+        .btn {
+            display: block;
+            height: 60px;
+            line-height: 60px;
+            padding: 0 80px;
+            border-radius: 0;
+            background-color: $black;
+            margin: auto;
+            color: #fff;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            
+            &.hover {
+                color: $black;
+                border: 2px solid $black;
+                background-color: #fff;
+                font-weight: 700;
+                transform: rotateX(-90deg) translateZ(-21px);
+            }
+            
+            &.default {
+                transform: translateZ(21px);
+            }
+        }
+        
+    }
+}
+
+/* --- FOOTER --- */
+footer {
+    padding-bottom: 10px;
+    @include media-xs-screen {
+        padding-bottom: 20px;
+    } 
+    .logo-ftr {
+        display: inline-block;
+        padding: 20px;
+        @include media-xs-screen {
+            display: block;
+            padding-top: 0;
+        }
+    }
+    
+    p {
+        display: inline-block;
+        @include media-xs-screen {
+            display: block;
+        }
+    }
+}
+
+.backToTop {
+    position: fixed;
+    background: url('https://i.imgur.com/dRot1yI.png') center 0/cover no-repeat;
+    bottom: 30px;
+    right: 30px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: none;
+    z-index: 999;
+    text-align: center;
+    opacity: 1;
+    -webkit-transition: visibility 0.2s, opacity 0.2s;
+    -moz-transition: visibility 0.2s, opacity 0.2s;
+    transition: visibility 0.2s, opacity 0.2s;
+    @include media-xs-screen {
+        bottom: 20px;
+        right: 20px;
+    }
+    &:hover {
+        background-color: #4c5c79;
+        opacity: 0.85;
+    }
+    &.hidden {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
